@@ -1,0 +1,20 @@
+.header {
+  font-size: 10px;
+  display: flex;
+  background-color: skyblue;
+  color: white;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  line-height: 53px;
+  width: 30px;
+}
+
+h1 {
+  flex: 1;
+  text-align: center;
+}

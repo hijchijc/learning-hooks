@@ -1,0 +1,18 @@
+.input-wrapper {
+  display: flex;
+  font-size: 20px;
+  border-bottom: 1px solid gray ;
+}
+
+.btn {
+  background-color: skyblue;
+  color: white;
+  width: 50px;
+  margin: 2px;
+  border: 0px;
+}
+
+input {
+  flex: 1;
+  margin: 2px;
+}
