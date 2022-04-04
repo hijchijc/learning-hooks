@@ -1,13 +1,22 @@
 import './App.css';
 import MyHeader from './components/header';
 import AddInput from './components/addInput';
-import {useState, useCallback} from 'react'
+import {useState, useCallback, useEffect} from 'react'
 import TodoItem from './components/todoItem'
 
 function App() {
 
   const [isInputShow, setIsInputShow] = useState(true),
         [todoList, setTodoList] = useState([])
+
+  useEffect(() => {
+    const todoData = JSON.parse(localStorage.getItem('todoData') || '[]')
+    setTodoList(todoData)
+  }, [])
+
+  useEffect(() => {
+    localStorage.setItem('todoData', JSON.stringify(todoList))
+  }, [todoList])
 
   const addItem = useCallback((value) => {
     const dataItem = {
