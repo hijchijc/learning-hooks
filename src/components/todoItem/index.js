@@ -16,9 +16,9 @@ export default function TodoItem(props) {
         {data.content}
       </span>
       <div className='btnGroup'>
-        <button className='btn1'></button>
-        <button className='btn2'></button>
-        <button className='btn3'></button>
+        <button className='btn1'>查看</button>
+        <button className='btn2'>编辑</button>
+        <button className='btn3'>移除</button>
       </div>
     </li>
   )

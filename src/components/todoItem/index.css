@@ -1,4 +1,47 @@
 .todoItem {
   display: flex;
+  border-bottom: 1px solid rgba(181, 187, 187, 0.2);
+  padding: 10px 10px;
 }
 
+.checkbox {
+  width: 20px;
+  text-align: center;
+  line-height: 26px;
+}
+
+.content {
+  flex: 1;
+  font-size: 20px;
+  margin: auto 5px;
+}
+
+.btnGroup {
+  width: 170px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn1 {
+  width: 50px;
+  background-color: rgb(81, 81, 211);
+  border: 0px;
+  color: white;
+  font-size: 15px;
+}
+
+.btn2 {
+  width: 50px;
+  background-color: rgb(217, 219, 110);
+  border: 0px;
+  color: white;
+  font-size: 15px;
+}
+
+.btn3 {
+  width: 50px;
+  background-color: rgb(231, 70, 70);
+  border: 0px;
+  color: white;
+  font-size: 15px;
+}
